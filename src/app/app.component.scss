@@ -8,6 +8,10 @@
     display: none;
 }
 
+.headerSoftSkill {
+    display: none;
+}
+
 
 body {
     display: flex;
@@ -33,6 +37,7 @@ body {
                 letter-spacing: 0.1rem;
             }
         }
+
         .education-div {
             margin-top: 10%;
             color: $secundary;
@@ -437,89 +442,151 @@ body {
       text-align: center;
     }
 
+    .footer {
+        display: none;
+    }
+
+// <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+// <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+// <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+// <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+// <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+// <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+// <!-- * * * * * * * to get started with your project! * * * * * * * * -->
+// <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 @media only screen and (max-width: 769px) {// tablet movil
 
     .mobilename {
-        margin-top: 35%;
+        justify-content: center;
         display: flex;
         font-family: 'Kalam', cursive;
         font-style: normal;
         font-weight: bolder;
-        // margin-left: 2%;
-        font-size: 200%;
+        font-size: 100%;
         line-height: 20%;
         color: $secundary;
         letter-spacing: 0.1rem;
+        z-index: 2000;
+        position: fixed;
+        top: 7%;
     }
 
     .projects-mobil {
         display: flex;
     }
 
-    :host {
-        display: block;
-      }
-      
-        .__bar {
+    .footer {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        // margin-top: 20%;
+        flex-shrink: 0;
+        // padding: 0;
+        // padding-bottom: -5%;
+        background: #3EC28F;
+        color: $secundary;
+        .ulFooter {
+            padding-top: 2%;
+            padding-bottom: 3%;
+            flex-direction: column; 
+            list-style: none;
+            flex-wrap: nowrap;
+            align-items: center;
+            text-align: center;
+            color: $secundary;
+        }
+        .footerIcon {
+            padding-bottom: 3%;
+            list-style: none;
             display: flex;
-          position: fixed;
-          top: 0;
-          left: 0;
-      
-          height: 80px;
-          width: 100%;
-      
-          background: #fff;
-        }
-      
-        .__button,
-        .__menu {
-          position: absolute;
-        }  
-      
-        .__button {
-          right: 20px;
-          top: 23px;
-          z-index: 1;
-      
-          margin: 0;
-          padding: 0;
-          
-          border: none;
-          background: transparent;
-          outline: none;
-          cursor: pointer;
-      
-          transition: opacity 200ms;
-      
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-      
-        .__menu {
-          left: 0;
-          top: 12px;    
-      
-          width: 100%;
-          padding: 0 80px;
-      
-          text-align: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            .cvFooter {
+                // border-radius: 30px;
+                padding-left: 9%;
+                padding-right: 9%;
+                // text-align: center;
+                // color: $primary;
+                // background: $secundary;
+                // border-radius: 50%;
+            }
         }
 
+    }
+    // INICIO DE MENU BURGUER
+    :host {
+        display: block;
+    }
+
+        .__bar {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            height: 80px;
+            width: 100%;
+
+            background:$primary;
+        }
+
+        .__button,
+        .__menu {
+            position: absolute;
+        }  
+
+        .__button {
+            right: 20px;
+            top: 23px;
+            z-index: 1;
+        
+            margin: 0;
+            padding: 0;
+            
+            border: none;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+
+            transition: opacity 200ms;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .__menu {
+            left: 0;
+            top: 12px;    
+        
+            width: 100%;
+            padding: 0 80px;
+        
+            text-align: center;
+        }
+        // FIN DE MENU BURGUER
+
     .body {
+        height: 100%;
+        flex: 1 0 auto;
         flex-direction: column-reverse;
         .navbar {
             padding-bottom: 10%;   
         }
         .left-aside {
-            margin-top: 2%;
+            // margin-top: 0;
             display: flex;
             flex-direction: column;
             font-family: 'Kalam', cursive;
             font-style: normal;
             font-weight: bold;
-            margin-left: 2%;
+            // margin-left: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
             .name-header {
                 margin-top: 2%;
                 .sonia-name-left {
@@ -530,17 +597,143 @@ body {
                     display: none;
                 }
             }
+            .headerSoftSkill {
+                color: $secundary;
+                letter-spacing: 0.04rem;
+                display: flex;
+                width: 90%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+                font-style: normal;
+                font-weight: bolder;
+                font-size: 1.9rem;
+                // line-height: 3.5rem;
+                // overflow: hidden;
+                margin-top: 10%;
+                border-radius: 30px;
+                padding: 3%;
+                text-align: center;
+                // padding-right: 2%;
+                background: $lightGreenTransparent;
+            }
+            .education-div {
+                margin-top: 0;
+                color: $secundary;
+                letter-spacing: 0.04rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                .eduCapital {
+                    margin-top: 15%;
+                    font-size: 170%;
+                    line-height: 150%;
+                    text-decoration-line: underline;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                }
+                .education {
+                    font-size: 160%;
+                    line-height: 160%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    list-style: none;                    
+                }
+            }
+            .ability-div {
+                color: $secundary;
+                letter-spacing: 0.04em;;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                .abilityCapital {
+                    margin-top: 15%;
+                    font-size: 170%;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    text-decoration-line: underline;
+                }
+                .abiliSoft {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    list-style: none;
+                    flex-wrap: nowrap;
+                    font-size: 160%;
+                    line-height: 160%;
+                    align-items: left;
+                    text-align: left;
+                }
+            }
+            .idioms-div {
+                color: $secundary;
+                font-style: normal;
+                font-weight: bold;
+                display: flex;
+                letter-spacing: 0.04em;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                .idiomCapital {
+                    margin-top: 15%;
+                    font-size: 170%;
+                    line-height: 150%;
+                    display: flex;
+
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+
+                    text-decoration-line: underline;
+                }
+                .twolanguages {
+                    font-size: 160%;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    list-style: none;
+                    padding-bottom: 30%;
+
+                }
+            }
         }
         .main {
             .pic-header-about-div {
+                margin-top: 10%;
                 display: flex;
-                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
                 .profile-pic {
-                    display: none;
+                    display: flex;
                     width: 65%;
-                    margin-top: 2%;
+                    margin-top: 20%;
                     // margin-right: 2%;
                     a .profileImg {
+                        display: none;
                         border-radius: 50%;
                         width: 100%;
                         height: auto;
@@ -551,6 +744,72 @@ body {
                         border: 1px solid $ivory;
                         background-color: $white;
                         z-index: 2;
+                    }
+                }
+                .header-about-triang {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    margin-left: 0;
+                    .headerGreenRectan {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+                        color: $secundary;
+                        font-style: normal;
+                        font-weight: bolder;
+                        font-size: 2.1rem;
+                        line-height: 5.5rem;
+                        letter-spacing: 0.5rem;
+                        overflow: hidden;
+                        margin-top: 5%;
+                        border-radius: 30px;
+                        // padding-left: 3%;
+                        // padding-right: 2%;
+                        background: $lightGreenTransparent;
+                    }
+                    .about-triang {
+                        margin-top: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: -1;
+                        .rightYellowTriang {
+                            // margin-top: 10%;
+                            width: 1px;
+                            height: 1px;
+                            background: linear-gradient(to bottom right, #fff 0%, #fff 50%, $yellow 50%, $yellow 100%);
+                            z-index: -1;
+                            // align-self: flex-end;
+                            display: none;
+                        }
+                        .about {
+                            width: 90%;
+                            margin-top: 2%;
+                            margin-left: -2%;
+                            color: $secundary;
+                            font-family: 'PT Sans Narrow';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 130%;
+                            line-height: 36px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: justify;
+                        }
+                        .leftYellowTriang {
+                            display: none;
+                            // margin-top: 3%;
+                            width: 1px;
+                            height: 1px;
+                            background: linear-gradient(to top left, #fff 0%, #fff 50%, $yellow 50%, $yellow 100%);
+                        }
                     }
                 }
             }

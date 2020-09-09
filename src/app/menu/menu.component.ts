@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
   expanded: boolean;
 
   @Input()
-  items: string[];
+  items: any; // string[];
 
   @Output()
   itemClick = new EventEmitter<void>(false);
