@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sonia';
+  open = false;
+
+  template = ['About', 'Our life', 'Projects', 'Team', ' Contact'];
+
+  toggleOpen(): void {
+    this.open = !this.open;
+  }
 
   showDialog(): void {
     const modal = document.getElementById('modal_1');

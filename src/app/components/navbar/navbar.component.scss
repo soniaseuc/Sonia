@@ -1,0 +1,269 @@
+@import '../../../styles.scss';
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked~.menu {
+  display: block;
+}
+
+input[type="checkbox"]:checked~.burguer-icon {
+  display: none;
+}
+
+input[type="checkbox"]:checked~.close-icon{
+  display: block;
+}
+
+.containerNavBar{
+  display: none;
+  width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background: $primary;
+  color: $secundary;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  nav {
+      height: 56px;
+      position: relative;
+    //   img {
+    //       @include size(120px, 30px);
+    //       margin-top: 15px;
+    //       padding-left: 15px;
+    //   }
+      i.icon {
+        position: absolute;
+        top: 23px;
+      }
+      i.phone {
+        left: 200px;
+      }
+      i.search {
+        left: 250px;
+      }
+      i.user {
+        left: 300px;
+      }
+      .burguer-icon {
+          display: block;
+          font-size: 30px;
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          cursor: pointer;
+      }
+      .close-icon {
+          display: none;
+          font-size: 25px;  
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          cursor: pointer;
+      }
+      ul.menu {
+          display: none;
+          background: $white;
+          color: $secundary;
+          margin-top: 6px;
+          height: 168px;   
+          li {
+              list-style: none;
+              font-size: 20px;
+              line-height: 28px;
+              font-weight: 700;
+              color: $secundary;
+              background: $white;
+              padding: 22px 15px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+            i {
+              display: block;
+              margin: 10px;
+            }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    nav {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 60px;
+        i.icon {
+          display: none;
+        }
+        .burguer-icon {
+            display: none;
+        }
+        .close-icon {
+            display: none;
+        }
+
+        ul.menu {
+            display: flex;
+            height: 60px;
+            margin-right: 20px;
+            margin-top: 0;
+            padding-top: 15px;
+            background: none;
+            li { 
+            color: #FFD7DA;
+            background: none;
+            padding: 0px 10px;
+            font-weight: bolder;
+            font-size: 14px;
+            display: flex;
+            height: 30px;
+              i {
+                display: block;
+              }
+              i.arrow {
+                margin: 9px 5px;
+              } 
+            }
+            li.contact {
+              padding-right: 100px;
+              i {
+                display: none;
+              }
+            }
+            li.search {
+              height: 30px;
+              border: 1px solid;
+              margin: 0 10px;
+              border-radius: 5px;
+              i {
+                display: block;
+                margin: 7px 20px;
+                color: $white;
+              }
+            }
+            li.myacount {
+              height: 30px;
+              color: #ef3340;
+              background: #fff;
+              padding-bottom: 0;
+              display: flex;
+              font-size: 12px;
+              border-radius: 5px;
+              font-weight: bold;
+              i {
+                display: block;
+                margin-top: 7px;
+                margin-right: 5px;
+              }
+            }
+            li:hover {
+                background: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    nav {
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        margin: 0 60px;
+        i.icon {
+          display: none;
+        }
+        .burguer-icon {
+            display: none;
+        }
+        .close-icon {
+            display: none;
+        }
+
+        ul.menu {
+            display: flex;
+            height: 60px;
+            margin-right: 20px;
+            margin-top: 0;
+            padding-top: 15px;
+            background: none;
+            li { 
+            color: #FFD7DA;
+            background: none;
+            padding: 0px 0px;
+            font-weight: bolder;
+            font-size: 10px;
+            display: flex;
+            height: 30px;
+              i {
+                display: block;
+                p {
+                  padding: 22px 0;
+                }
+              }
+              i.arrow {
+                margin: 19px 15px;
+              } 
+            }
+            li.contact {
+              padding-right: 50px;
+              i {
+                display: none;
+              }
+            }
+            li.search {
+              height: 30px;
+              border: 1px solid;
+              margin: 0 25px;
+              padding: 0 0 0 35px;
+              border-radius: 5px;
+              i {
+                display: block;
+                margin: 71x 200px;
+                color: $white;
+              }
+              span {
+                text-indent: -9999px;
+                display: block;
+                margin: 71x 200px;
+                color: $white;
+              }
+            }
+            li.myacount {
+              height: 30px;
+              color: #ef3340;
+              background: #fff;
+              padding-bottom: 0;
+              display: flex;
+ 
+              border-radius: 5px;
+              font-weight: bold;
+              padding: 0;
+              i {
+                display: block;
+                margin-top: 7px;
+                margin-right: 65px;
+              }
+              p {
+                display: block;
+                margin-top: 7px;
+                margin-right: 65px;
+                text-indent: -9999px;
+              }
+            }
+            li:hover {
+                background: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+}

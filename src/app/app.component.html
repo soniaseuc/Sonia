@@ -1,4 +1,22 @@
+
 <body class="body">
+  <!-- <div class="navbar"> -->
+    <div class="__bar">
+
+      <button class="__button" (click)="toggleOpen()">
+        <burger [open]="open"></burger>
+      </button>  
+    
+      <menu 
+        class="__menu"
+        [expanded]="open" 
+        [items]="template"
+        (onItemClick)="toggleOpen()">
+      </menu>
+    
+    </div>
+    <!-- <app-navbar></app-navbar>
+  </div> -->
   <aside class="left-aside">
 
     <div class="name-header">
@@ -35,6 +53,10 @@
   </aside>
   
   <main class="main">
+    <div class="name-header mobilename" >
+      <h1 class="sonia-name-left">SONIA Seuc</h1>
+      <h1 class="sonia-name-left"></h1>
+    </div>
   
     <div class="pic-header-about-div">
 
@@ -170,6 +192,19 @@
     </div>
 
   </main>
+
+  <div class="projects-mobile">
+    <div class="mob-proj1-div">
+      <div class="mob-proj1-name"></div>
+      <div class="mob-proj1-pic"></div>
+      <div class="mob-proj1-about"></div>
+    </div>
+    <div class="mob-proj2-div">
+      <div class="mob-proj2-name"></div>
+      <div class="mob-proj2-pic"></div>
+      <div class="mob-proj2-about"></div>
+    </div>
+  </div>
 </body>
 
 

@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 // this makes the .modal visible
 // .sshow {
 //     display: block;
@@ -12,15 +14,31 @@
     // makes it hover above all elements
     z-index: 1000;
     position: fixed;
-    top: 30px;
+    top: 50%;
     bottom: 0;
-    left: 300px;
-    width: 300px;
+    left: 70%;
+    // width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 .mmodal-body {
-    background: #fff;
-    margin: 30px;
-    padding: 10px;
+    background:$primary;
+    // margin: 30px;
+    padding: 10%;
+    color: $secundary;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2.1rem;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 // backdrop color
 .mmodal-background {

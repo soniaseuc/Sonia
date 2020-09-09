@@ -1,8 +1,21 @@
 @import '../styles.scss';
 
+.mobilename  {
+    display: none;
+}
+
+.projects-mobil {
+    display: none;
+}
+
+
 body {
     display: flex;
     flex-direction: row;
+    .navbar {
+        margin-bottom: 1%;
+        // display:none;
+    }
     .left-aside {
         margin-top: 2%;
         display: flex;
@@ -373,6 +386,177 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) { // modo movil
+:host {
+    display: block;
+  }
+  
+    .__bar {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+  
+      height: 80px;
+      width: 100%;
+  
+      background: #fff;
+    }
+  
+    .__button,
+    .__menu {
+      position: absolute;
+    }  
+  
+    .__button {
+      right: 20px;
+      top: 23px;
+      z-index: 1;
+  
+      margin: 0;
+      padding: 0;
+      
+      border: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+  
+      transition: opacity 200ms;
+  
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  
+    .__menu {
+      left: 0;
+      top: 12px;    
+  
+      width: 100%;
+      padding: 0 80px;
+  
+      text-align: center;
+    }
 
+@media only screen and (max-width: 769px) {// tablet movil
+
+    .mobilename {
+        margin-top: 35%;
+        display: flex;
+        font-family: 'Kalam', cursive;
+        font-style: normal;
+        font-weight: bolder;
+        // margin-left: 2%;
+        font-size: 200%;
+        line-height: 20%;
+        color: $secundary;
+        letter-spacing: 0.1rem;
+    }
+
+    .projects-mobil {
+        display: flex;
+    }
+
+    :host {
+        display: block;
+      }
+      
+        .__bar {
+            display: flex;
+          position: fixed;
+          top: 0;
+          left: 0;
+      
+          height: 80px;
+          width: 100%;
+      
+          background: #fff;
+        }
+      
+        .__button,
+        .__menu {
+          position: absolute;
+        }  
+      
+        .__button {
+          right: 20px;
+          top: 23px;
+          z-index: 1;
+      
+          margin: 0;
+          padding: 0;
+          
+          border: none;
+          background: transparent;
+          outline: none;
+          cursor: pointer;
+      
+          transition: opacity 200ms;
+      
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      
+        .__menu {
+          left: 0;
+          top: 12px;    
+      
+          width: 100%;
+          padding: 0 80px;
+      
+          text-align: center;
+        }
+
+    .body {
+        flex-direction: column-reverse;
+        .navbar {
+            padding-bottom: 10%;   
+        }
+        .left-aside {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Kalam', cursive;
+            font-style: normal;
+            font-weight: bold;
+            margin-left: 2%;
+            .name-header {
+                margin-top: 2%;
+                .sonia-name-left {
+                    font-size: 1%;
+                    line-height: 1%;
+                    color: $secundary;
+                    letter-spacing: 0.1rem;
+                    display: none;
+                }
+            }
+        }
+        .main {
+            .pic-header-about-div {
+                display: flex;
+                flex-direction: row;
+                .profile-pic {
+                    display: none;
+                    width: 65%;
+                    margin-top: 2%;
+                    // margin-right: 2%;
+                    a .profileImg {
+                        border-radius: 50%;
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                        // overflow: hidden;
+                        line-height: 1;
+                        vertical-align: middle;
+                        border: 1px solid $ivory;
+                        background-color: $white;
+                        z-index: 2;
+                    }
+                }
+            }
+            .main-project-icons {
+                display: none;
+            }
+        }
+    }
 }

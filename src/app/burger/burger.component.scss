@@ -1,0 +1,32 @@
+:host {
+    position: relative;
+
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+    .__line {
+        position: absolute;
+        right: 15px;
+    
+        width: 5px;
+        height: 5px;
+        border-radius: 2px;
+    
+        background: #000;
+    
+        transition: background 200ms;
+    }
+
+    .__line--first {
+        top: 0;
+    }
+
+    .__line--second {
+        top: 15px;
+    }
+
+    .__line--third {
+        top: 30px;
+    }
