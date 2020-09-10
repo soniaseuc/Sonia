@@ -31,7 +31,7 @@ body {
         .name-header {
             margin-top: 2%;
             .sonia-name-left {
-                font-size: 500%;
+                font-size: 600%;
                 line-height: 80%;
                 color: $primary;
                 letter-spacing: 0.1rem;
@@ -391,58 +391,62 @@ body {
     cursor: pointer;
 }
 
-:host {
-    display: block;
-  }
+// :host {
+//     display: block;
+//   }
   
-    .__bar {
-      position: fixed;
-      display: none;
-      top: 0;
-      left: 0;
+//     .__bar {
+//       position: fixed;
+//       display: none;
+//       top: 0;
+//       left: 0;
   
-      height: 80px;
-      width: 100%;
+//       height: 80px;
+//       width: 100%;
   
-      background: #fff;
-    }
+//       background: #fff;
+//     }
   
-    .__button,
-    .__menu {
-      position: absolute;
-    }  
+//     .__button,
+//     .__menu {
+//       position: absolute;
+//     }  
   
-    .__button {
-      right: 20px;
-      top: 23px;
-      z-index: 1;
+//     .__button {
+//       right: 20px;
+//       top: 23px;
+//       z-index: 1;
   
-      margin: 0;
-      padding: 0;
+//       margin: 0;
+//       padding: 0;
       
-      border: none;
-      background: transparent;
-      outline: none;
-      cursor: pointer;
+//       border: none;
+//       background: transparent;
+//       outline: none;
+//       cursor: pointer;
   
-      transition: opacity 200ms;
+//       transition: opacity 200ms;
   
-      &:hover {
-        opacity: 0.8;
-      }
-    }
+//       &:hover {
+//         opacity: 0.8;
+//       }
+//     }
   
-    .__menu {
-      left: 0;
-      top: 12px;    
+//     .__menu {
+//       left: 0;
+//       top: 12px;    
   
-      width: 100%;
-      padding: 0 80px;
+//       width: 100%;
+//       padding: 0 80px;
   
-      text-align: center;
-    }
+//       text-align: center;
+//     }
 
     .footer {
+        display: none;
+    }
+
+    .ocultmaterialmenu {
         display: none;
     }
 
@@ -457,19 +461,29 @@ body {
 
 @media only screen and (max-width: 769px) {// tablet movil
 
+    .ocultmaterialmenu {
+        display: flex;
+        background: #3EC28F;
+        padding-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
     .mobilename {
         justify-content: center;
         display: flex;
-        font-family: 'Kalam', cursive;
+        font-family: 'Kalam', cursive; 
         font-style: normal;
         font-weight: bolder;
-        font-size: 100%;
+        font-size: 300%;
         line-height: 20%;
         color: $secundary;
         letter-spacing: 0.1rem;
         z-index: 2000;
-        position: fixed;
-        top: 7%;
+        // position: fixed;
+        right: 7%;
+        margin-top: -6%;
+        top: 1%;
     }
 
     .projects-mobil {
@@ -495,6 +509,9 @@ body {
             align-items: center;
             text-align: center;
             color: $secundary;
+            font-weight: bolder;
+            line-height: 150%;
+            font-size: 150%;
         }
         .footerIcon {
             padding-bottom: 3%;
@@ -573,7 +590,7 @@ body {
         flex: 1 0 auto;
         flex-direction: column-reverse;
         .navbar {
-            padding-bottom: 10%;   
+            padding-bottom: 1%;   
         }
         .left-aside {
             // margin-top: 0;
@@ -609,12 +626,13 @@ body {
                 flex-wrap: wrap;
                 font-style: normal;
                 font-weight: bolder;
-                font-size: 1.9rem;
+                font-size: 2rem;
                 // line-height: 3.5rem;
                 // overflow: hidden;
                 margin-top: 10%;
                 border-radius: 30px;
-                padding: 3%;
+                padding: 4% 0;
+                line-height: 100%;
                 text-align: center;
                 // padding-right: 2%;
                 background: $lightGreenTransparent;
@@ -721,7 +739,7 @@ body {
         }
         .main {
             .pic-header-about-div {
-                margin-top: 10%;
+                margin-top: 2%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -730,7 +748,7 @@ body {
                 .profile-pic {
                     display: flex;
                     width: 65%;
-                    margin-top: 20%;
+                    margin-top: 5%;
                     // margin-right: 2%;
                     a .profileImg {
                         display: none;
@@ -790,18 +808,20 @@ body {
                         }
                         .about {
                             width: 90%;
+                            letter-spacing: 0.1rem;
                             margin-top: 2%;
                             margin-left: -2%;
                             color: $secundary;
                             font-family: 'PT Sans Narrow';
                             font-style: normal;
-                            font-weight: bold;
-                            font-size: 130%;
+                            font-weight: bolder;
+                            font-size: 150%;
                             line-height: 36px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             align-content: justify;
+                            margin-bottom: -3%;
                         }
                         .leftYellowTriang {
                             display: none;

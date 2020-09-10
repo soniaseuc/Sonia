@@ -1,3 +1,4 @@
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 /* You can add global styles to this file, and also import other style files */
 $primary: #3EC28F;
 $lightGreenTransparent: rgba(62, 194, 143, 0.5);
@@ -20,4 +21,11 @@ $white : #fff;
 
 html {
     box-sizing: border-box;  
+}
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    // font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-family: 'Kalam', cursive;
 }
