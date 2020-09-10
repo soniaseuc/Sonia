@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
-import { ShowModalComponent } from './components/showmodal/showModal.component';
+import { ShowModalComponent } from './components/showmodal/showmodal.component';
 import { ShowemailComponent } from './components/showemail/showemail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BurgerComponent } from './burger/burger.component';
