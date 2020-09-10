@@ -15,6 +15,15 @@ import { BurgerComponent } from './burger/burger.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 import { ModalMaterialComponent } from './components/modal-material/modal-material.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './components/footer/footer.component';
+import { LeftKnowMeComponent } from './components/left-know-me/left-know-me.component';
+import { MainInfoComponent } from './components/main-info/main-info.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +35,23 @@ import { ModalMaterialComponent } from './components/modal-material/modal-materi
     BurgerComponent,
     MenuComponent,
     MenuButtonComponent,
-    ModalMaterialComponent
+    ModalMaterialComponent,
+    MainNavComponent,
+    FooterComponent,
+    LeftKnowMeComponent,
+    MainInfoComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule
 
   ],
   providers: [],

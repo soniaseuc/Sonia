@@ -1,0 +1,237 @@
+@import '../../../styles.scss';
+
+.left-aside {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kalam', cursive;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 2%;
+    .headerSoftSkill {
+        display: none;
+    }
+    .name-header {
+        margin-top: 2%;
+        .sonia-name-left {
+            font-size: 600%;
+            line-height: 80%;
+            color: $primary;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .education-div {
+        margin-top: 10%;
+        color: $secundary;
+        letter-spacing: 0.04rem;
+        .eduCapital {
+            margin-top: 15%;
+            font-size: 170%;
+            line-height: 150%;
+            text-decoration-line: underline;
+        }
+        .education {
+            font-size: 160%;
+            line-height: 160%;
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+            list-style: none;                    
+        }
+    }
+    .ability-div {
+        color: $secundary;
+        letter-spacing: 0.04rem;
+        .abilityCapital {
+            margin-top: 15%;
+            font-size: 170%;
+            line-height: 150%;
+            align-items: center;
+            text-align: justify;
+            text-decoration-line: underline;
+        }
+        .abiliSoft {
+            display: flex;
+            flex-direction: column; 
+            list-style: none;
+            flex-wrap: nowrap;
+            font-size: 160%;
+            line-height: 160%;
+            align-items: left;
+            text-align: left;
+        }
+    }
+    .idioms-div {
+        color: $secundary;
+        font-style: normal;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        .idiomCapital {
+            margin-top: 15%;
+            font-size: 170%;
+            line-height: 150%;
+            align-items: center;
+            letter-spacing: 0.04em;
+            text-decoration-line: underline;
+        }
+        .twolanguages {
+            font-size: 160%;
+            line-height: 160%;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            list-style: none;
+            letter-spacing: 0.04em;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {// tablet movil
+    .left-aside {
+        // margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Kalam', cursive;
+        font-style: normal;
+        font-weight: bold;
+        // margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        .name-header {
+            margin-top: 2%;
+            .sonia-name-left {
+                font-size: 1%;
+                line-height: 1%;
+                color: $secundary;
+                letter-spacing: 0.1rem;
+                display: none;
+            }
+        }
+        .headerSoftSkill {
+            color: $secundary;
+            letter-spacing: 0.04rem;
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 2rem;
+            // line-height: 3.5rem;
+            // overflow: hidden;
+            margin-top: 10%;
+            border-radius: 30px;
+            padding: 4% 0;
+            line-height: 100%;
+            text-align: center;
+            // padding-right: 2%;
+            background: $lightGreenTransparent;
+        }
+        .education-div {
+            margin-top: 0;
+            color: $secundary;
+            letter-spacing: 0.04rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            .eduCapital {
+                margin-top: 15%;
+                font-size: 170%;
+                line-height: 150%;
+                text-decoration-line: underline;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+            .education {
+                font-size: 160%;
+                line-height: 160%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                list-style: none;                    
+            }
+        }
+        .ability-div {
+            color: $secundary;
+            letter-spacing: 0.04em;;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            .abilityCapital {
+                margin-top: 15%;
+                font-size: 170%;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                text-decoration-line: underline;
+            }
+            .abiliSoft {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                list-style: none;
+                flex-wrap: nowrap;
+                font-size: 160%;
+                line-height: 160%;
+                align-items: left;
+                text-align: left;
+            }
+        }
+        .idioms-div {
+            color: $secundary;
+            font-style: normal;
+            font-weight: bold;
+            display: flex;
+            letter-spacing: 0.04em;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            .idiomCapital {
+                margin-top: 15%;
+                font-size: 170%;
+                line-height: 150%;
+                display: flex;
+
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+
+                text-decoration-line: underline;
+            }
+            .twolanguages {
+                font-size: 160%;
+                line-height: 160%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                list-style: none;
+                padding-bottom: 30%;
+
+            }
+        }
+    }
+}

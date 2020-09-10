@@ -1,0 +1,343 @@
+@import '../../../styles.scss';
+
+    .main {
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'PT Sans Narrow', sans-serif;
+        .pic-header-about-div {
+            display: flex;
+            flex-direction: row;
+            .profile-pic {
+                width: 65%;
+                margin-top: 2%;
+                // margin-right: 2%;
+                a .profileImg {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+                    // overflow: hidden;
+                    line-height: 1;
+                    vertical-align: middle;
+                    border: 1px solid $ivory;
+                    background-color: $white;
+                    z-index: 2;
+                }
+            }
+            .header-about-triang {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-left: -15%;
+                .headerGreenRectan {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    color: $secundary;
+                    font-style: normal;
+                    font-weight: bolder;
+                    font-size: 5.1rem;
+                    line-height: 6.5rem;
+                    letter-spacing: 0.5rem;
+                    overflow: hidden;
+                    margin-top: 3%;
+                    border-radius: 30px;
+                    padding-left: 3%;
+                    padding-right: 2%;
+                    background: $lightGreenTransparent;
+                }
+                .about-triang {
+                    margin-top: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: stretch;
+                    z-index: -1;
+                    .rightYellowTriang {
+                        margin-top: 10%;
+                        width: 90px;
+                        height: 90px;
+                        background: linear-gradient(to bottom right, #fff 0%, #fff 50%, $yellow 50%, $yellow 100%);
+                        z-index: -1;
+                        align-self: flex-end;
+                    }
+                    .about {
+                        width: 55%;
+                        margin-top: 2%;
+                        color: $secundary;
+                        font-family: 'PT Sans Narrow';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 36px;
+                        display: flex;
+                        align-items: center;
+                        text-align: justify;
+                    }
+                    .leftYellowTriang {
+                        margin-top: 3%;
+                        width: 90px;
+                        height: 90px;
+                        background: linear-gradient(to top left, #fff 0%, #fff 50%, $yellow 50%, $yellow 100%);
+                    }
+                }
+            }
+        }
+        .main-project-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: stretch;
+            .left-icons {
+                margin-right: -3%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                align-content: center; 
+                .githubSvg {
+                    margin-bottom: 20%;
+                }
+                .linkedinSvg {
+                    margin-bottom: 20%;
+                }
+                .fbSvg {
+                    margin-bottom: 1%;
+                }
+            }
+            .all-projects {
+                color: $secundary;
+                margin: 0 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                font-style: normal;
+                font-weight: bold;
+                .firstProjectDiv {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    align-content: center;
+                    align-items: center;
+                    justify-content: center;
+                    .first-project-about-title-div {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        max-inline-size: 50%;
+                        writing-mode: horizontal-tb;
+                        .firstProjectTitle {
+                            color: $secundary;
+                            width: fit-content;
+                            margin-top: 10%;
+                            margin-bottom: 2%;
+                            font-size: 20px;
+                            line-height: 26px;
+                            display: flex;
+                            align-items: center;
+                            text-align: justify;
+                            letter-spacing: 0.06em;
+                            text-decoration-line: underline;
+                        }
+                        .firstAboutProject {
+                            white-space: wrap;
+                            max-width: 90%;
+                            font-size: 20px;
+                            line-height: 26px;
+                            display: flex;
+                            align-items: center;
+                            text-align: justify;
+                            letter-spacing: 0.06em;                           
+                        }
+                    }
+                    .firstProjectFigure {
+                        margin-top: 3%;
+                        flex-grow: 1;
+                        .firstProjectImg {
+                            max-width: 70%;
+                            height: auto;
+                            margin-left: 10%;
+                        }                   
+                    }
+                }
+                .secondProjectDiv {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    width: 100%;
+                    .second-project-about-title-div {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        max-inline-size: 50%;
+                        writing-mode: horizontal-tb;
+                        .secondProjectTitle {
+                            width: fit-content;
+                            margin-top: 10%;
+                            margin-bottom: 2%;
+                            color: $secundary;
+                            font-size: 20px;
+                            line-height: 26px;
+                            display: flex;
+                            align-items: center;
+                            text-align: justify;
+                            letter-spacing: 0.06em;
+                            text-decoration-line: underline;
+                        }
+                        .secondAboutProject {
+                            max-width: 90%;
+                            white-space: wrap; 
+                            font-size: 20px;
+                            line-height: 26px;
+                            display: flex;
+                            align-items: center;
+                            text-align: justify;
+                            letter-spacing: 0.06em;
+                        }
+                        
+                    }
+                    .secondProjectFigure {
+                        flex-grow: 1;
+                        margin-top: 2%;
+                        .secondProjectImg {
+                            width: 70%;
+                            height: auto;
+                            margin-left: 10%;
+                        }
+                    }
+                }
+            }
+            .right-icons {
+                margin-right: 5%;
+                margin-left: -10%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                align-content: center;
+                .instagramSvg {
+                    margin-bottom: 20%;
+                }    
+                .whatsapp {
+                    cursor:pointer;
+                    margin-bottom: 30%;
+                }
+                .email {
+                    cursor:pointer;
+                    margin-bottom: 1%;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 769px) {// tablet movil
+        .main {
+            .pic-header-about-div {
+                margin-top: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                .profile-pic {
+                    display: flex;
+                    width: 65%;
+                    margin-top: 5%;
+                    // margin-right: 2%;
+                    a .profileImg {
+                        display: none;
+                        border-radius: 50%;
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                        // overflow: hidden;
+                        line-height: 1;
+                        vertical-align: middle;
+                        border: 1px solid $ivory;
+                        background-color: $white;
+                        z-index: 2;
+                    }
+                }
+                .header-about-triang {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    margin-left: 0;
+                    .headerGreenRectan {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+                        color: $secundary;
+                        font-style: normal;
+                        font-weight: bolder;
+                        font-size: 2.1rem;
+                        line-height: 5.5rem;
+                        letter-spacing: 0.5rem;
+                        overflow: hidden;
+                        margin-top: 5%;
+                        border-radius: 30px;
+                        // padding-left: 3%;
+                        // padding-right: 2%;
+                        background: $lightGreenTransparent;
+                    }
+                    .about-triang {
+                        margin-top: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: -1;
+                        .rightYellowTriang {
+                            // margin-top: 10%;
+                            width: 1px;
+                            height: 1px;
+                            background: linear-gradient(to bottom right, #fff 0%, #fff 50%, $yellow 50%, $yellow 100%);
+                            z-index: -1;
+                            // align-self: flex-end;
+                            display: none;
+                        }
+                        .about {
+                            width: 90%;
+                            letter-spacing: 0.1rem;
+                            margin-top: 2%;
+                            margin-left: -2%;
+                            color: $secundary;
+                            font-family: 'PT Sans Narrow';
+                            font-style: normal;
+                            font-weight: bolder;
+                            font-size: 150%;
+                            line-height: 36px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: justify;
+                            margin-bottom: -3%;
+                        }
+                        .leftYellowTriang {
+                            display: none;
+                            // margin-top: 3%;
+                            width: 1px;
+                            height: 1px;
+                            background: linear-gradient(to top left, #fff 0%, #fff 50%, $yellow 50%, $yellow 100%);
+                        }
+                    }
+                }
+            }
+            .main-project-icons {
+                display: none;
+            }
+        }
+    }
