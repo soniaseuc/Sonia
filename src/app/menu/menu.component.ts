@@ -1,3 +1,4 @@
+// DESABILITADO
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { menuAnimation } from './menu.animations';
 

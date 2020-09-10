@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +10,19 @@ export class AppComponent {
   open = false;
 
   template = ['About', 'Our life', 'Projects', 'Team', ' Contact'];
+
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(): void {
+    this.dialog.open(DialogElementsExampleDialog);
+  }
+
+  openDialogo(): void {
+    this.dialog.open(DialogElementsExampleDialogo);
+  }
+
+  ngOnInit(): void {
+  }
 
   toggleOpen(): void {
     this.open = !this.open;
@@ -39,3 +52,25 @@ closeDialogo(): void {
   modal.classList.add('hhidden');
 }
 }
+
+@Component({
+  selector: 'dialog-elements-example-dialog',
+  template: `
+  <h1 mat-dialog-title>Teléfono:</h1>
+  <div mat-dialog-content>+51 994796718</div>
+  <div mat-dialog-actions>
+    <!-- <button mat-button mat-dialog-close>Close</button> -->
+  </div>`,
+})
+export class DialogElementsExampleDialog {}
+
+@Component({
+  selector: 'dialog-elements-example-dialogo',
+  template: `
+  <h1 mat-dialog-title>Correo:</h1>
+  <div mat-dialog-content>sonia.seuc@gmail.com</div>
+  <div mat-dialog-actions>
+    <!-- <button mat-button mat-dialog-close>Close</button> -->
+  </div>`,
+})
+export class DialogElementsExampleDialogo {}

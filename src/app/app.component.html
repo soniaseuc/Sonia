@@ -189,26 +189,30 @@
           </svg>
         </a>
         
-        <app-about id="modal_1" class="hhidden">
+        <!-- <app-about id="modal_1" class="hhidden">
           <p class="teleNumber">Teléfono: +51994796718</p>
           <button id="myDiv1" class="close-button">❌</button>
-        </app-about>
+        </app-about>-->
 
-        <div (click)="showDialog()" class="whatsapp">
+        <!-- <div (click)="showDialog()" class="whatsapp"> -->
+          
+        <div mat-button (click)="openDialog()" class="whatsapp">
           <a class="whatsappSvg" >
             <!-- <span>+53994796718</span> -->
             <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M93 23.625C78 0.499968 47.375 -6.37503 23.625 7.99997C0.499964 22.375 -7.00003 53.625 7.99997 76.75L9.24997 78.625L4.24997 97.375L23 92.375L24.875 93.625C33 98 41.75 100.5 50.5 100.5C59.875 100.5 69.25 98 77.375 93C100.5 78 107.375 47.375 93 23.625ZM79.875 71.75C77.375 75.5 74.25 78 69.875 78.625C67.375 78.625 64.25 79.875 51.75 74.875C41.125 69.875 32.375 61.75 26.125 52.375C22.375 48 20.5 42.375 19.875 36.75C19.875 31.75 21.75 27.375 24.875 24.25C26.125 23 27.375 22.375 28.625 22.375H31.75C33 22.375 34.25 22.375 34.875 24.875C36.125 28 39.25 35.5 39.25 36.125C39.875 36.75 39.875 38 39.25 38.625C39.875 39.875 39.25 41.125 38.625 41.75C38 42.375 37.375 43.625 36.75 44.25C35.5 44.875 34.875 46.125 35.5 47.375C38 51.125 41.125 54.875 44.25 58C48 61.125 51.75 63.625 56.125 65.5C57.375 66.125 58.625 66.125 59.25 64.875C59.875 63.625 63 60.5 64.25 59.25C65.5 58 66.125 58 67.375 58.625L77.375 63.625C78.625 64.25 79.875 64.875 80.5 65.5C81.125 67.375 81.125 69.875 79.875 71.75Z" fill="#226249"/>
             </svg>              
           </a>
+          
         </div>
 
-        <app-about id="modal_2" class="hhidden">
+        <!-- <app-about id="modal_2" class="hhidden">
           <p class="teleNumber">Correo: sonia.seuc@gmail.com</p>
           <button id="myDiv2" class="close-button">❌</button>
         </app-about>
 
-        <div (click)="showDialogo()" class="email">
+        <div (click)="showDialogo()" class="email"> -->
+        <div mat-button (click)="openDialogo()" class="email">
           <a >
             <!-- <span>sonia.seuc@gmail.com</span> -->
             <svg class="emailSvg" width="88" height="67" viewBox="0 0 88 67" fill="none" xmlns="http://www.w3.org/2000/svg">

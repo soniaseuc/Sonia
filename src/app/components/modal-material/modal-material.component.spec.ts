@@ -1,21 +1,20 @@
-// DESABILITADO
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowemailComponent } from './showemail.component';
+import { ModalMaterialComponent } from './modal-material.component';
 
-describe('ShowemailComponent', () => {
-  let component: ShowemailComponent;
-  let fixture: ComponentFixture<ShowemailComponent>;
+describe('ModalMaterialComponent', () => {
+  let component: ModalMaterialComponent;
+  let fixture: ComponentFixture<ModalMaterialComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowemailComponent ]
+      declarations: [ ModalMaterialComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowemailComponent);
+    fixture = TestBed.createComponent(ModalMaterialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

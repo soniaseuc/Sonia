@@ -1,3 +1,4 @@
+// DESABILITADO
 import {
     trigger,
     state,

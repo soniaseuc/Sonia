@@ -1,3 +1,4 @@
+// DESABILITADO
 import { Component, OnInit, Input } from '@angular/core';
 import { burgerLineAnimation } from './burger.animations';
 
