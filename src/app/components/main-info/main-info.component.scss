@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
     .main {
-        margin-left: 5%;
+        margin-left: 2%;
         display: flex;
         flex-direction: column;
         font-family: 'PT Sans Narrow', sans-serif;
@@ -9,7 +9,7 @@
             display: flex;
             flex-direction: row;
             .profile-pic {
-                width: 65%;
+                width: 60%;
                 margin-top: 2%;
                 // margin-right: 2%;
                 a .profileImg {
@@ -52,7 +52,7 @@
                     background: $lightGreenTransparent;
                 }
                 .about-triang {
-                    margin-top: 0;
+                    margin-top: -2%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
@@ -113,6 +113,7 @@
             .all-projects {
                 color: $secundary;
                 margin: 0 10%;
+                margin-top: -1%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;

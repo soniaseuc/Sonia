@@ -8,8 +8,11 @@
 
 .sidenav {
   width: 90vw;
-  height: fit-content;  
+  height: 100vh;  
   .allProjects {
+    list-style-type: none;
+    padding-top: 10%;
+    font-family: 'Kalam', cursive;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -18,7 +21,7 @@
     background: $white;
     color: $secundary;
     .projectFigure {
-      margin-top: 3%;
+      margin: 3% 0;
       flex-grow: 1;
       display: flex;
       justify-content: center;
@@ -40,13 +43,22 @@
         }     
       }
     }
+    .projectTitle {
+      font-size: 150%;
+      font-weight: bolder;
+      padding-top: 10%;
+      text-decoration-line: underline;
+    }
     .aboutProject {
+      font-size: 120%;
+      font-weight: bold;
       display: flex;
       justify-content: center;
       align-content: center;
       align-items: center;
       text-align: center;
       max-width: 60%;
+      margin-bottom: 5%;
     }
   }
 }
@@ -88,7 +100,7 @@
   }
 }
 
-@media (min-width: 768px) { // escritorio
+@media (min-width: 769px) { // escritorio
   .sidenav { // pq no queria que se viese el menu lateral en modo escritorio
     display: none;
   }

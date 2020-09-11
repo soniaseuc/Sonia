@@ -1,18 +1,18 @@
 @import '../../../styles.scss';
 
 .left-aside {
-    margin-top: 2%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     font-family: 'Kalam', cursive;
     font-style: normal;
     font-weight: bold;
-    margin-left: 2%;
+    margin-left: 10%;
     .headerSoftSkill {
         display: none;
     }
     .name-header {
-        margin-top: 2%;
+        margin-top: 5%;
         .sonia-name-left {
             font-size: 600%;
             line-height: 80%;
@@ -22,7 +22,7 @@
     }
 
     .education-div {
-        margin-top: 10%;
+        margin-top: 5%;
         color: $secundary;
         letter-spacing: 0.04rem;
         .eduCapital {
@@ -96,7 +96,7 @@
         font-family: 'Kalam', cursive;
         font-style: normal;
         font-weight: bold;
-        // margin-left: 0;
+        margin-left: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
