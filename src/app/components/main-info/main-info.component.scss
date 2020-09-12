@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
     .main {
-        margin-left: 2%;
+        padding-left: 6%; // before was margin2%
         display: flex;
         flex-direction: column;
         font-family: 'PT Sans Narrow', sans-serif;
@@ -9,9 +9,33 @@
             display: flex;
             flex-direction: row;
             .profile-pic {
-                width: 60%;
+                width: 50%; // before was 60% | makes hand pointer anchor only shows left side
                 margin-top: 2%;
-                // margin-right: 2%;
+                // padding-left: 2%;
+                // a.tooltip {
+                //     border-bottom: 1px dashed;
+                //     text-decoration: none;
+                //     span {
+                //         display: none;
+                //     }
+                //     :hover {
+                //         cursor: help;
+                //         position: relative;
+                //         span {
+                //             border: #666 2px dotted;
+                //             padding: 5px 20px 5px 5px;
+                //             display: block;
+                //             z-index: 1000;
+                //             background: #850101;
+                //             left: 0px;
+                //             margin: 15px;
+                //             width: 300px;
+                //             position: absolute;
+                //             top: 15px;
+                //             text-decoration: none;
+                //         }
+                //     }
+                // }
                 a .profileImg {
                     border-radius: 50%;
                     width: 100%;
@@ -31,7 +55,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-content: center;
-                margin-left: -15%;
+                margin-left: -10%; // before was comment
                 .headerGreenRectan {
                     display: flex;
                     align-items: center;
@@ -73,7 +97,7 @@
                         font-family: 'PT Sans Narrow';
                         font-style: normal;
                         font-weight: bold;
-                        font-size: 28px;
+                        font-size: 180%; // before px
                         line-height: 36px;
                         display: flex;
                         align-items: center;
@@ -240,8 +264,55 @@
         }
     }
 
+    // inicio hover span help
+    a.tooltip {
+        // border-bottom: 1px dashed;
+        text-decoration: none;
+    }
+
+    a.tooltip:hover {
+        cursor: help;
+        position: relative;
+    }
+
+    a.tooltip span {
+        display: none;
+    }
+
+    a.tooltip:hover span {
+        border: $secundary 2px dotted;
+        padding: 5px 10px 5px 5px;
+        display: block;
+        z-index: 3;
+        background: $primary;
+        left: 0px;
+        margin: 15px;
+        width: fit-content;
+        position: absolute;
+        top: 15px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-family: 'PT Sans Narrow';
+        font-style: normal;
+        font-weight: bolder;
+        color: $secundary;
+    }
+    a.tooltip:hover .titles {
+        width: 150px;
+    }
+
+    a.tooltip:hover .botton-links {
+        left: 90%;
+        margin: -40%;
+        top: 100%;
+    }
+
+
+    // fin hover span help
+
     @media only screen and (max-width: 769px) {// tablet movil
         .main {
+            padding-left: 0; // bc desktop padding left was 6%
             .pic-header-about-div {
                 margin-top: 2%;
                 display: flex;
@@ -274,7 +345,7 @@
                     justify-content: center;
                     align-content: center;
                     flex-direction: column;
-                    margin-left: 0;
+                    margin-left: 0; // bc desktop is margin-left: -10%;
                     .headerGreenRectan {
                         display: flex;
                         align-items: center;
@@ -314,18 +385,18 @@
                             width: 90%;
                             letter-spacing: 0.1rem;
                             margin-top: 2%;
-                            margin-left: -2%;
+                            // margin-left: -2%;
                             color: $secundary;
                             font-family: 'PT Sans Narrow';
                             font-style: normal;
                             font-weight: bolder;
-                            font-size: 150%;
+                            font-size: 190%;
                             line-height: 36px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             align-content: justify;
-                            margin-bottom: -3%;
+                            margin-bottom: -10%;
                         }
                         .leftYellowTriang {
                             display: none;
